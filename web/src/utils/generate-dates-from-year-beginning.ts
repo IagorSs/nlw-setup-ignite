@@ -9,7 +9,7 @@ export default function generateDatesFromYearBeginning() {
 
   while(compareDate.isBefore(today)) {
     dates.push(compareDate.toDate())
-    compareDate.add(1, 'day')
+    compareDate = compareDate.add(1, 'day')
   }
 
   return dates
